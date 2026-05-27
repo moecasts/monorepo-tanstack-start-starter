@@ -2,6 +2,7 @@
   "name": "taoplot",
   "private": true,
   "scripts": {
+    "postinstall": "git config --local core.hooksPath \"$(git rev-parse --git-common-dir)/hooks\" && lefthook install --force",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "biome lint .",
@@ -10,6 +11,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
+    "@evilmartians/lefthook": "^2.1.8",
     "turbo": "^2.9.15",
     "typescript": "5.9.2"
   },

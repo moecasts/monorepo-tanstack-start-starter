@@ -1,6 +1,6 @@
 # Monorepo Tanstack Start Starter
 
-A modern React starter built on Turborepo, powered by TanStack Start, Biome, shadcn/ui, and Vitest.
+A modern React starter built on Turborepo, powered by TanStack Start, Biome, shadcn/ui, Lefthook, and Vitest.
 
 ## Tech Stack
 
@@ -10,6 +10,7 @@ A modern React starter built on Turborepo, powered by TanStack Start, Biome, sha
 | Build           | [Vite](https://vite.dev) + [Turborepo](https://turborepo.dev)                   |
 | Styling         | [Tailwind CSS v4](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com) |
 | Lint & Format   | [Biome](https://biomejs.dev)                                                    |
+| Git Hooks       | [Lefthook](https://lefthook.dev)                                                |
 | Testing         | [Vitest](https://vitest.dev)                                                    |
 | Package Manager | [pnpm](https://pnpm.io)                                                         |
 
@@ -31,6 +32,7 @@ monorepo-tanstack-start-starter/
 │   │       └── lib/
 │   └── typescript-config/ # Shared tsconfig presets
 ├── biome.json
+├── lefthook.yml
 ├── turbo.json
 └── pnpm-workspace.yaml
 ```
