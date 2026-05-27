@@ -1,0 +1,35 @@
+---
+description: Git commit message format
+alwaysApply: true
+enabled: true
+---
+
+# Git Commit Rules
+
+## Format
+
+type(scope): description
+
+- All lowercase English
+- Subject line only, no body
+- No trailers (Co-Authored-By, Signed-off-by, etc.)
+
+## Types
+
+feat, fix, refactor, chore, docs, style, test, perf, ci, build
+
+## Scopes
+
+root, web, ui, typescript-config
+
+Always prefer the detailed `scope/module` format (e.g. `web/auth`, `ui/button`). Only use a bare `scope` (e.g. `web`, `ui`) when the change genuinely spans multiple modules within that scope.
+
+Use comma-separated scopes for cross-cutting changes across multiple scopes. When listing multiple scopes, use bare scope names only: `chore(web,ui): update shared dependency`
+
+## Examples
+
+- `feat(web/auth): add user list pagination`
+- `fix(ui/button): handle disabled state`
+- `refactor(ui/lib): simplify cn utility`
+- `chore(root): update dependencies`
+- `feat(web): add home page layout`

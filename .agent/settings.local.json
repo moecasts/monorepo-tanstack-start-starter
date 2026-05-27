@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf packages/ui/src/*)",
+      "Bash(mkdir -p packages/ui/src/lib packages/ui/src/components/ui packages/ui/src/hooks)"
+    ]
+  }
+}
